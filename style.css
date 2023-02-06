@@ -21,7 +21,13 @@
     #title {
       display: flex;
       justify-content: center;
+      background-image: url(./images/bkg.png);
+      background-repeat: no-repeat;
+      background-size: 500px;
+    }
 
+    #text-title {
+    margin-left: 300px;
     }
 
     .test {
@@ -47,7 +53,7 @@
     }
 
     #foto-avatar {
-      height: 400px;
+      height: 300px;
       /* border-radius: 50%; */
       margin-top: 20px;
     }
@@ -62,7 +68,7 @@
       #arrow-header {
         rotate: 130deg;
         width: 168px;
-        margin-left: 200px;
+        margin-left: 500px;
       }
 
       h1, h2 {
@@ -70,9 +76,9 @@
       }
 
       #foto-avatar {
-        height: 200px;
+        height: 300px;
         margin-top: -100px;
-        margin-right: 230px;
+        margin-right: 70px;
       }
 
     }
