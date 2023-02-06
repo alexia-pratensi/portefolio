@@ -36,13 +36,13 @@
 
     h1 {
       font-size: 50px;
-      font-family: gochi hand ;
+      font-family:  'Gochi Hand', cursive;
       text-align: center;
     }
 
     h2 {
       font-size: 30px;
-      font-family: gochi hand;
+      font-family:  'Gochi Hand', cursive;
       text-align: start;
     }
 
@@ -58,6 +58,26 @@
     }
 
   /* navbar */
+
+    .navbar-anchor > ul {
+      padding-inline-start: 0px;
+      text-align: right;
+      margin-top: 75px;
+
+    }
+    .navbar-anchor > ul > li {
+      display: inline-block;
+      font-family: 'Itim', cursive;
+    }
+    .navbar-anchor > ul > li > a {
+      text-decoration: none;
+      color:rgb(210, 21, 134);
+      font-size: 23px;
+    }
+    .navbar-anchor > ul > li > a:hover {
+      color:black;
+    }
+
 
     @media screen and (max-width: 1100px) {
 
