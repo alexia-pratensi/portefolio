@@ -62,7 +62,6 @@
 
 
   /* navbar */
-
     .navbar-anchor > ul {
       padding-inline-start: 0px;
       text-align: right;
@@ -77,7 +76,7 @@
     .navbar-anchor > ul > li > a {
       text-decoration: none;
       color:#FF2FBC;
-      font-size: 25px;
+      font-size: 22px;
     }
     .navbar-anchor > ul > li > a:hover {
       color:black;
@@ -134,11 +133,6 @@
 
     .project-description > p {
       font-size: 15px;
-    }
-
-    .project-image {
-
-
     }
 
     .project-description {
