@@ -1,6 +1,7 @@
 .button-bh {
   text-decoration: none;
   color: white;
+  font-weight: bold;
   background: rgb(247,48,149);
   background: linear-gradient(74deg, rgba(247,48,149,1) 0%, rgba(247,95,48,1) 40%, rgba(247,159,131,1) 100%, rgba(248,248,246,1) 100%);  padding: 5px 15px;
   border-radius: 5px;
@@ -12,6 +13,7 @@
 .button-bab {
   text-decoration: none;
   color: white;
+  font-weight: bold;
   background: rgb(6,36,113);
   background: linear-gradient(133deg, rgba(6,36,113,1) 0%, rgba(61,11,242,1) 100%, rgba(248,248,246,1) 100%);  border-radius: 5px;
   border-radius: 5px;
@@ -23,8 +25,21 @@
 .button-dc {
   text-decoration: none;
   color: white;
-  background: rgb(215,231,84);
-  background: radial-gradient(circle, rgba(215,231,84,0.9893207282913166) 0%, rgba(236,99,159,1) 100%);
+  font-weight: bold;
+  background: rgb(254,252,149);
+  background: linear-gradient(50deg, rgba(254,252,149,1) 0%, rgba(250,167,228,1) 100%);
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 20px;
+  padding: 5px 20px;
+}
+
+.button-sf {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background: rgb(249,250,250);
+  background: linear-gradient(50deg, rgba(249,250,250,1) 0%, rgba(174,174,174,1) 0%, rgba(114,114,114,1) 43%, rgba(34,34,34,1) 86%);
   border-radius: 5px;
   margin-top: 5px;
   margin-left: 20px;
