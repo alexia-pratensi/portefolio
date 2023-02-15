@@ -1,0 +1,32 @@
+.button-bh {
+  text-decoration: none;
+  color: white;
+  background: rgb(247,48,149);
+  background: linear-gradient(74deg, rgba(247,48,149,1) 0%, rgba(247,95,48,1) 40%, rgba(247,159,131,1) 100%, rgba(248,248,246,1) 100%);  padding: 5px 15px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 20px;
+  padding: 5px 20px;
+}
+
+.button-bab {
+  text-decoration: none;
+  color: white;
+  background: rgb(6,36,113);
+  background: linear-gradient(133deg, rgba(6,36,113,1) 0%, rgba(61,11,242,1) 100%, rgba(248,248,246,1) 100%);  border-radius: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 20px;
+  padding: 5px 20px;
+}
+
+.button-dc {
+  text-decoration: none;
+  color: white;
+  background: rgb(215,231,84);
+  background: radial-gradient(circle, rgba(215,231,84,0.9893207282913166) 0%, rgba(236,99,159,1) 100%);
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 20px;
+  padding: 5px 20px;
+}

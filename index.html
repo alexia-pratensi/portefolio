@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Alexia Pratensi</title>
+    <!-- required mete tags -->
+    <meta charset="utf-8">
+    <!-- responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Itim&family=Pacifico&display=swap" rel="stylesheet">    <!-- bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 
   </head>
   <body>
+
     <!-- header -->
     <div id="header">
       <!-- title -->
@@ -29,23 +41,98 @@
           <img src="./images/arrow-header.png" alt="arrow" id="arrow-header">
         <img src="./images/avatar3.png" alt="avatar" id="foto-avatar">
       </div>
+    </div>
 
-      <!-- A propos -->
-      <div id="about">
-        <h3>A propos de moi...</h3>
-        <p>J’ai 32 ans et je viens de commencer un très belle aventure de reconversion professionnelle !
-          <br>Après avoir dirigé pendant plus de 6 ans des établissements médico-sociaux, j’ai décidé de me lancer pleinement dans l’une de mes passions, le développement web.
-          <br>
-          <br>Mes premiers pas ont été guidés par de nombreux tutos en ligne avec lesquels je me suis beaucoup amusée.
-          <br>Puis, il était temps de passer à l’action en prenant une décision qui allait changer ma vie, me professionnaliser dans cette activité !
-          <br>
-          <br>Après quelques mois de bootcamp, me voici fin prête à participer pleinement à un tas de projets en tant que développeuse web junior... Pour pratiquer un max, mais aussi pour continuer à apprendre, je recherche un poste en alternance. </p>
+    <!-- A propos -->
+    <div id="about">
+      <h3>A propos de moi...</h3>
+      <p class="pb-5">J’ai 32 ans et je viens de commencer un très belle aventure de reconversion professionnelle !
+        <br>Après avoir dirigé pendant plus de 6 ans des établissements médico-sociaux, j’ai décidé de me lancer pleinement dans l’une de mes passions, le développement web.
+        <br>
+        <br>Mes premiers pas ont été guidés par de nombreux tutos en ligne avec lesquels je me suis beaucoup amusée.
+        <br>Puis, il était temps de passer à l’action en prenant une décision qui allait changer ma vie, me professionnaliser dans cette activité !
+        <br>
+        <br>Après quelques mois de bootcamp, me voici fin prête à participer pleinement à un tas de projets en tant que développeuse web junior... Pour pratiquer un max, mais aussi pour continuer à apprendre, je recherche un poste en alternance. </p>
+        <div class="title-project">
+          <img src="./images/arrow-header.png" alt="arrow-project" id="arrow-project">
+          <h3>Mes projets </h3>
+        </div>
+    </div>
+
+    <div id="project">
+      <!-- carousel -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+
+
+        <!-- components -->
+        <div class="carousel-inner">
+          <!-- behind meat -->
+          <div class="carousel-item active" >
+            <div class="project-component">
+              <div class="project-image">
+                <img src="./images/behindmeat.png" alt="Behind Meat" style="width: 100%">
+              </div>
+              <div class="project-description">
+                <h4>Behind Meat</h4>
+                <p>Cette application web permet de calculer l'impact environnemental de sa consommation de viande. </p>
+                <p>L'objectif est d'accompagner les personnes qui souhaitent limiter leur empreinte environnementale liée à l’élevage, en diminuant leur consommation de viande.</p>
+                <p>Projet d'équipe de 3 personnes, codé en 10 jours durant le bootcamp Le Wagon.</p>
+                <a href="https://www.behindmeat.site/" type="button"  target="_blank" class="button-bh">👉🏻 Voir le site</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book a Book -->
+          <div class="carousel-item" >
+            <div class="project-component">
+              <div class="project-image">
+                <img src="./images/bookabook2.png" alt="Behind Meat" style="height: 400px">
+              </div>
+              <div class="project-description">
+                <h4>Book a book</h4>
+                <p>Cette application web permet de louer ou de mettre en location des livres pour les personnes préférant le papier plutôt que les e-books ou encore celles qui m'ont plus de place chez pour en stocker de nouveaux. </p>
+                <p>Projet de fin d'étude, codé en 2-3 jours</p>
+                <a href="https://www.bookabook.online/" type="button" target="_blank" class="button-bab">👉🏻 Voir le site</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dreamscatcher -->
+          <div class="carousel-item" >
+            <div class="project-component">
+              <div class="project-image">
+                <img src="./images/dreamscatcher.png" alt="Behind Meat" style="height: 400px">
+              </div>
+              <div class="project-description">
+                <h4>Dreamscatcher</h4>
+                <p>Cette application a été mon tout premier projet de développement web.
+                  <br> Elle est basé sur une idée imaginaire: et si nous pourrions louer nos rêves...?😴 😶‍🌫️</p>
+                <p>Ce projet a été réalisé en équipe de 3 personnes durant 5 jours. </p>
+                <a href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/69b478bc-5294-40b0-9d77-f1a51d4d9d17/dreamscatcher.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230206%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230206T173808Z&X-Amz-Expires=86400&X-Amz-Signature=a0761af4a51fa08e2bed1eba172a86f82199c62ae41aed9642f5e0995f259066&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22dreamscatcher.pdf%22&x-id=GetObject" type="button-dc" target="_blank" class="button-dc">👉🏻 Voir le projet</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- link previous/next -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+
+
       </div>
-
-      <div id="">
-
-      </div>
-
     </div>
 
 
@@ -54,6 +141,6 @@
 
 
 
-    <script src="index.js"></script>
+
   </body>
 </html>
