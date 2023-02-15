@@ -45,3 +45,40 @@
   margin-left: 20px;
   padding: 5px 20px;
 }
+
+/* TABLET_______________________________________________________________________ */
+
+@media only screen and (max-width: 768px){
+  .button-bab{
+   margin-left: 300px !important;
+  }
+  .button-sf{
+   margin-left: 300px !important;
+  }
+  .button-dc{
+    margin-left: 300px !important;
+  }
+  .button-bh{
+    margin-left: 300px !important;
+  }
+}
+/* REGULAR MOBILE_______________________________________________________________ */
+
+@media only screen and (max-width: 425px){
+  .button-bab{
+    margin: auto !important;
+    font-size: small;
+  }
+  .button-sf{
+    margin: auto !important;
+    font-size: small;
+  }
+  .button-dc{
+    margin: auto !important;
+    font-size: small;
+  }
+  .button-bh{
+    margin: auto !important;
+    font-size: small;
+  }
+}
