@@ -1,8 +1,9 @@
 @import "/button.css";
+@import "/slider.css";
 
 /*DESKTOP_______________________________________________________________________ */
 
-@media only screen and (max-width: 1440px) {
+/* @media only screen and (max-width: 1440px) { */
 
   /* header */
   #title {
@@ -124,7 +125,7 @@
   .icon-carousel{
     color:black
   }
-}
+/* } */
 
 /* SMALL DESKTOP________________________________________________________________*/
 
