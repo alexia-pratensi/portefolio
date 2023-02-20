@@ -1,5 +1,6 @@
 @import "/button.css";
 @import "/slider.css";
+@import "/timeline.css";
 
 /*DESKTOP_______________________________________________________________________ */
 
@@ -59,7 +60,7 @@
   }
   .navbar-anchor > ul > li > a {
     text-decoration: none;
-    color:#FF2FBC;
+    color:#FA056D;
     font-size: 22px;
   }
   .navbar-anchor > ul > li > a:hover {
@@ -125,6 +126,9 @@
   .icon-carousel{
     color:black
   }
+
+
+
 /* } */
 
 /* SMALL DESKTOP________________________________________________________________*/
