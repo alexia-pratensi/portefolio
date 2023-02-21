@@ -1,16 +1,55 @@
 /* timeline/parcours */
+.main-container-timeline {
+  background-color: #2e364a;
+}
+
 .timeline {
   position: relative;
   max-width: 1200px;
   margin: 100px auto;
   background: rgba(0, 0, 0, 0.1);
 }
-.container {
+.container-timeline {
   padding: 10px 50px;
   position: relative;
   width: 50%;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.03);
+  animation: movedown 1s linear forwards;
+  opacity:0
 }
+
+.container-timeline:nth-child(1) {
+  animation-delay: 0s;
+}
+.container-timeline:nth-child(2) {
+  animation-delay: 1s;
+}
+.container-timeline:nth-child(3) {
+  animation-delay: 2s;
+}
+.container-timeline:nth-child(4) {
+  animation-delay: 3s;
+}
+.container-timeline:nth-child(5) {
+  animation-delay: 4s;
+}
+.container-timeline:nth-child(6) {
+  animation-delay: 5s;
+}
+.container-timeline:nth-child(7) {
+  animation-delay: 6s;
+}
+@keyframes movedown{
+  0%{
+    opacity:1;
+    transform: translateY(-30px);
+  }
+  100%{
+    opacity:1;
+    transform: translateY(0px);
+  }
+}
+
 .text-box{
   padding: 20px 30px;
   background: #fff;
@@ -24,7 +63,7 @@
 .right-container {
   left: 50%;
 }
-.container img {
+.container-timeline img {
   position: absolute;
   width: 40px;
   border-radius: 50%;
@@ -44,10 +83,19 @@
   top:0;
   left: 50%;
   margin-left: -3px;
-  z-index: -1
+  z-index: -1;
+  animation: moveline 6s linear forwards;
+}
+@keyframes moveline {
+  0%{
+    height: 0;
+  }
+  0%{
+    height: 100%;
+  }
 }
 .text-box h2 {
-  font-weight: 600;
+  font-weight: 600px;
 }
 .text-box small{
   display: inline-block;
@@ -74,4 +122,156 @@
   border-bottom: 15px solid transparent;
   border-left: 15px solid #fff;
   left: -15px
+}
+/* Responsive___________________________________________________________________ */
+@media screen and (max-width:600px){
+  .timeline {
+    margin: 50px auto;
+  }
+  .timelene::after{
+    left: 31px;
+  }
+  .container-timeline {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+  .text-box {
+    font-size: 13px;
+  }
+  .text-box small {
+    margin-bottom: 10px;
+  }
+  .right-container {
+    left:0;
+  }
+  .left-container img, .right-container img {
+    left: 10px;
+  }
+  .left-container-arrow, .right-container-arrow {
+    border-right: 15px solid #fff;
+    border-left:0;
+    left: -15px;
+  }
+}
+
+
+
+
+
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Jost', sans-serif;
+}
+body {
+  background: #333;
+}
+h1 {
+  text-align: center;
+  padding: 240px 0;
+  color: #f1f1f1;
+}
+.box-timeline {
+  width: 100%;
+  height: 1500px;
+  background: #f1f1f1;
+  position: relative;
+  padding: 80px 0 250px 0;
+  margin-bottom: 100px;
+}
+
+.ligne {
+  height: 1000px;
+  width: 8px;
+  margin: 0 auto;
+  background: #333;
+}
+
+.rond {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #333;
+  position: absolute;
+  border: 1px solid #000;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+/* 1000 - 160 + 80 / 3 =~ 306 */
+.r1{top: 80px;}
+.r2{top: 386px;}
+.r3{top: 692px;}
+.r4{top: 1000px;}
+
+.box {
+  color: #333;
+  width: 400px;
+  min-height: 200px;
+  padding: 20px;
+  border-radius: 3px;
+  height: auto;
+  background: #f1f1f1;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.b1 {
+  top: 80px;
+  left: calc(50% - 270px);
+}
+.b2 {
+  top: 386px;
+  left: calc(50% + 270px);
+}
+.b3 {
+  top: 692px;
+  left: calc(50% - 270px);
+}
+.b4 {
+  top: 1000px;
+  left: calc(50% + 270px);
+}
+
+.box p {
+  line-height: 20px;
+  font-size: 18px;
+  margin: 10px 0 20px 0;
+}
+.btn {
+  display: block;
+  background: midnightblue;
+  padding: 10px;
+  width: 120px;
+  text-align: center;
+  color: #f1f1f1;
+  text-decoration: none;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .ligne {
+      position: relative;
+      left: 200px;
+  }
+  .rond {
+      left: calc(50% + 200px);
+  }
+  .box {
+      left: calc(50% - 50px)
+  }
+
 }
